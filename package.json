@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.1.1",
+    "@iconify-json/logos": "^1.1.2",
+    "@iconify-json/simple-icons": "^1.1.1",
+    "@pinia/nuxt": "^0.1.8",
+    "@unocss/nuxt": "^0.26.3",
+    "@vueuse/nuxt": "^7.6.2",
+    "nuxt3": "^3.0.0-27430348.4ff1a95"
+  },
+  "dependencies": {
+    "cssnano": "^5.0.17",
+    "pinia": "^2.0.11"
+  }
+}
