@@ -3,14 +3,14 @@
 
 <template>
   <div class="auth h-full">
-    <div class="auth__logo absolute top-40px left-40px flex items-start z-1 text-teal-600 ">
+    <NuxtLink to="/" class="auth__logo absolute top-40px left-40px flex items-start z-1 text-teal-600">
       <div class="auth__logoIcon h-24px w-24px text-3xl">
         <div class="i-carbon-webhook" />
       </div>
       <div class="auth__logoText ml-20px text-2xl font-bold">
         <span>QuickSales</span>
       </div>
-    </div>
+    </NuxtLink>
 
     <div class="auth__wrapper flex items-center justify-center w-full h-full">
       <div class="auth__container flex relative w-720px my-20px">

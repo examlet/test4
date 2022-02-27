@@ -1,5 +1,5 @@
 <template>
-  <div class="page h-full w-full">
+  <div class="app h-full w-full">
     <QProgress />
     <NuxtPage />
   </div>

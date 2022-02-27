@@ -26,7 +26,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <progress :value="progress" class="q-progress"></progress>
+  <progress :value="progress"></progress>
 </template>
 
 <style scoped>
