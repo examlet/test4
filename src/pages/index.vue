@@ -53,7 +53,7 @@ const changeSubmenu = () => submenu_hidden.value = !submenu_hidden.value
                 class="landing__header_submenu"
                 :class="[submenu_hidden ? '-translate-y-120%' : '-translate-y-0']"
             >
-                <div class="landing__header_submenuСontainer wrapper">
+                <div class="landing__header_submenuСontainer landing__wrapper">
                     <div class="landing__header_submenuLine mt-0">
                         <NuxtLink to="/" class="landing__header_submenuLink">Возможности</NuxtLink>
                     </div>
