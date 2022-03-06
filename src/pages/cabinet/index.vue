@@ -50,10 +50,10 @@ const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vP
                                 </div>
 
                                 <div class="text-center text-[#6d7885] mt-5px">@partamath</div>
-                                <div class="op60 text-sm text-center fw300 mx-0">#dc97609060e5</div>
+                                <div class="op60 text-sm text-center fw300 mx-0">170347806</div>
                             </div>
                             <div class="w-60% py-10px px-20px !truncate">
-                                <div class="text-center text-[#6d7885]">Математика ЕГЭ | PARTA</div>
+                                <div class="text-center text-[#6d7885] overflow-ellipsis">Математика ЕГЭ | PARTA</div>
 
                                 <div class="grid grid-cols-[1fr_1fr] mt-10px">
                                     <div class="flex items-center justify-start op60 fw300 text-sm">

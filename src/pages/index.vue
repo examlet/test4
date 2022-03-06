@@ -55,16 +55,28 @@ const changeSubmenu = () => submenu_hidden.value = !submenu_hidden.value
             >
                 <div class="landing__header_submenuСontainer landing__wrapper">
                     <div class="landing__header_submenuLine mt-0">
-                        <NuxtLink to="/" class="landing__header_submenuLink">Возможности</NuxtLink>
+                        <NuxtLink to="" class="landing__header_submenuLink flex items-center justify-start">
+                            <div class="i-carbon-tropical-storm-tracks" />
+                            <div class="ml-10px">Возможности</div>
+                        </NuxtLink>
                     </div>
                     <div class="landing__header_submenuLine">
-                        <NuxtLink to="/" class="landing__header_submenuLink">Тарифы</NuxtLink>
+                        <NuxtLink to="" class="landing__header_submenuLink flex items-center justify-start">
+                            <div class="i-carbon-calculator" />
+                            <div class="ml-10px">Тарифы</div>
+                        </NuxtLink>
                     </div>
                     <div class="landing__header_submenuLine">
-                        <NuxtLink to="/" class="landing__header_submenuLink">Блог</NuxtLink>
+                        <NuxtLink to="" class="landing__header_submenuLink flex items-center justify-start">
+                            <div class="i-carbon-notebook-reference" />
+                            <div class="ml-10px">Блог</div>
+                        </NuxtLink>
                     </div>
                     <div class="landing__header_submenuLine">
-                        <NuxtLink to="/" class="landing__header_submenuLink">Перейти в приложение</NuxtLink>
+                        <NuxtLink to="/auth" class="landing__header_submenuLink flex items-center justify-start">
+                            <div class="i-carbon-fingerprint-recognition" />
+                            <div class="ml-10px">Перейти в приложение</div>
+                        </NuxtLink>
                     </div>
                 </div>
             </div>
