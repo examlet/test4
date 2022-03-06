@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { PropType } from 'nuxt3/dist/app/compat/capi';
+
 const props = defineProps({
     url: { type: String, required: true },
     titles: { type: Array as PropType<string[]>, required: true }
@@ -31,7 +33,7 @@ const breadcrumbs = computed<{ url: string; title: string }[]>(() => {
 </script>
 
 <template>
-    <ul flex flex-wrap text-sm>
+    <ul flex flex-wrap text-base w0> 
         <li v-for="(item, index) in breadcrumbs" :key="`item${index}`">
             <NuxtLink
                 v-if="index < breadcrumbs.length - 1"

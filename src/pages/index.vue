@@ -27,16 +27,16 @@ const changeSubmenu = () => submenu_hidden.value = !submenu_hidden.value
                     </div>
                     <div class="landing__header_menu">
                         <NuxtLink to="/">
-                            <QButton class="landing__header_button" quaternary>Возможности</QButton>
+                            <QButton class="landing__header_button h-30px" quaternary>Возможности</QButton>
                         </NuxtLink>
                         <NuxtLink to="/">
-                            <QButton class="landing__header_button" quaternary>Тарифы</QButton>
+                            <QButton class="landing__header_button h-30px" quaternary>Тарифы</QButton>
                         </NuxtLink>
                         <NuxtLink to="/">
-                            <QButton class="landing__header_button" quaternary>Блог</QButton>
+                            <QButton class="landing__header_button h-30px" quaternary>Блог</QButton>
                         </NuxtLink>
                         <NuxtLink to="/auth">
-                            <QButton class="" tertiary>Перейти в приложение</QButton>
+                            <QButton class="h-30px" tertiary>Перейти в приложение</QButton>
                         </NuxtLink>
                     </div>
 

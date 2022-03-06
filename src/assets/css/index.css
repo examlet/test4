@@ -7,3 +7,14 @@ div#__nuxt {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
 }
+
+*::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f7f9;
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #14b8a6;
+    border-radius: 5px;
+}
