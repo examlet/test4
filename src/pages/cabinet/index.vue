@@ -12,7 +12,7 @@ const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vP
         <div class="cabinet__content p-20px h-full grid grid-rows-[auto_auto_1fr] gap-5px">
             <div class="bg-[#fff] border-1px border-[#e1e3e6] rounded p2">
                 <div
-                    class="cabinet__content_control grid grid-cols-1 grid-rows-3 md:grid-rows-2 md:grid-cols-[3fr_4fr] lg:grid-rows-1 lg:grid-cols-[3fr_4fr_5fr] gap-15px lg:gap-30px"
+                    class="cabinet__content_control grid grid-cols-1 grid-rows-3 md:grid-rows-2 md:grid-cols-[3fr_4fr] lg:grid-rows-1 lg:grid-cols-[5fr_6fr_7fr] gap-15px lg:gap-30px"
                 >
                     <QButton strong class="h-40px w-full">
                         <div class="flex items-center justify-center text-sm">
@@ -38,12 +38,12 @@ const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vP
                         <div
                             v-for="(tab, index) in test"
                             :key="index"
-                            class="flex w-full h-150px border-1px border-[#e1e3e6] rounded overflow-hidden"
+                            class="flex w-full h-150px border-1px border-[#e1e3e6] hover:border-[#14b8a6] rounded overflow-hidden transition-colors duration-300"
                         >
                             <div
                                 class="w-40% flex-col flex-grow flex-shrink-0 bg-[#f5f7f9] pt-10px"
                             >
-                                <div class="ml-10px text-[#6d7885] i-carbon-star" />
+                                <div class="ml-10px text-[#6d7885] hover:text-[#14b8a6] cursor-pointer i-carbon-star" />
 
                                 <div class="h-65px w-65px mx-auto">
                                     <img class="rounded-50px" :src="photo_url" />
@@ -52,11 +52,8 @@ const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vP
                                 <div class="text-center text-[#6d7885] mt-5px">@partamath</div>
                                 <div class="op60 text-sm text-center fw300 mx-0">#dc97609060e5</div>
                             </div>
-                            <div class="w-60% py-10px px-20px">
-                                <div class="flex items-center justify-start text-[#6d7885]">
-                                    <div class="i-carbon-operations-record" />
-                                    <div class="ml-5px">Математика ЕГЭ | PARTA</div>
-                                </div>
+                            <div class="w-60% py-10px px-20px !truncate">
+                                <div class="text-center text-[#6d7885]">Математика ЕГЭ | PARTA</div>
 
                                 <div class="grid grid-cols-[1fr_1fr] mt-10px">
                                     <div class="flex items-center justify-start op60 fw300 text-sm">
