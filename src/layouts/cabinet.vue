@@ -22,12 +22,10 @@ const toggleDrawer = () => drawerCollapsed.value = !drawerCollapsed.value
           <div class="flex h-full items-center">
 
             <div class="hidden sm:block">Лукин Вадим #1337</div>
-            <hr class="hidden sm:block h-50% w-1px border-l border-[#e1e3e6] mx-5">
-            <div class="hidden sm:block i-carbon-idea" />
             <div class="block sm:hidden i-carbon-user-profile" />
             <hr class="h-50% w-1px border-l border-[#e1e3e6] mx-5">
             <div 
-              class="i-carbon-settings transition-transform duration-300 ease-in-out hover:text-teal-700" 
+              class="i-carbon-settings cursor-pointer transition-transform duration-300 ease-in-out hover:text-teal-700" 
               :class="{ 'rotate-360': !drawerCollapsed }"
               @click="toggleDrawer"
             />
