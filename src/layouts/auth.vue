@@ -48,7 +48,7 @@
                   Регистрируясь в сервисе, принимаю условия соглашения и политики конфиденциальности
                 </div>
           </div>
-          <div class="auth__rightCol w-360px h-full flex-grow-0 flex-shrink-0 box-border bg-[#fff] p-28px pb-16px">
+          <div class="auth__rightCol mx-20px lg:mx-0px w-360px h-full flex-grow-0 flex-shrink-0 box-border bg-[#fff] p-28px pb-16px">
             <slot />
           </div>
         </div>
