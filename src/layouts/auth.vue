@@ -13,8 +13,8 @@
     </NuxtLink>
 
     <div class="auth__wrapper flex items-center justify-center w-full h-full">
-      <div class="auth__container flex relative w-360px lg:w-720px my-20px">
-        <div class="auth__box flex relative mx-20px md:mx-0 w-360px lg:w-720px h-450px border-1px border-[#e1e3e6] rounded-10px overflow-hidden">
+      <div class="auth__container flex relative w-full sm:w-360px lg:w-720px my-20px">
+        <div class="auth__box flex relative mx-auto sm:mx-0 w-90% sm:w-360px lg:w-720px h-450px border-1px border-[#e1e3e6] rounded-10px overflow-hidden">
           <div class="auth__leftCol hidden lg:block w-360px h-full flex-grow-0 flex-shrink-0 bg-[#f5f7f9] p-28px">
               <div class="auth__line w-full h-8px bg-teal-500 mb-20px rounded"></div>
               <h1 class="auth__title font-sans text-lg font-normal leading-snug break-words mb-18px">Авторизуйтесь в QuickSales ID, чтобы использовать CRM</h1>
