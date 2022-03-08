@@ -3,7 +3,7 @@
 
 <template>
   <div class="auth h-full">
-    <NuxtLink to="/" class="auth__logo absolute top-40px left-40px flex items-start z-1 text-teal-600">
+    <NuxtLink to="/" class="auth__logo hidden lg:flex absolute top-40px left-40px items-start z-1 text-teal-600">
       <div class="auth__logoIcon h-24px w-24px text-3xl">
         <div class="i-carbon-webhook" />
       </div>
@@ -13,9 +13,9 @@
     </NuxtLink>
 
     <div class="auth__wrapper flex items-center justify-center w-full h-full">
-      <div class="auth__container flex relative w-720px my-20px">
-        <div class="auth__box flex relative h-450px border-1px border-[#e1e3e6] rounded-10px overflow-hidden">
-          <div class="auth__leftCol w-360px h-full flex-grow-0 flex-shrink-0 bg-[#f5f7f9] p-28px">
+      <div class="auth__container flex relative w-360px lg:w-720px my-20px">
+        <div class="auth__box flex relative w-360 h-450px border-1px border-[#e1e3e6] rounded-10px overflow-hidden">
+          <div class="auth__leftCol hidden lg:block w-360px h-full flex-grow-0 flex-shrink-0 bg-[#f5f7f9] p-28px">
               <div class="auth__line w-full h-8px bg-teal-500 mb-20px rounded"></div>
               <h1 class="auth__title font-sans text-lg font-normal leading-snug break-words mb-18px">Авторизуйтесь в QuickSales ID, чтобы использовать CRM</h1>
               <ul class="auth__list mb-32px">

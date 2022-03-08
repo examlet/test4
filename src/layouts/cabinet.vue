@@ -34,7 +34,7 @@ const toggleDrawer = () => drawerCollapsed.value = !drawerCollapsed.value
     </div>
 
     <div class="cabinet__body h-full">
-      <div v-if="!drawerCollapsed" bg-black-500 op10 z-1 fixed h-full w-full @click="toggleDrawer" />
+      <div v-if="!drawerCollapsed" class="bg-black-500 op10 z-1 fixed h-full w-full" @click="toggleDrawer" />
       <QDrawer :collapsed="drawerCollapsed" />
       <slot />
     </div>

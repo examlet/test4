@@ -53,29 +53,29 @@ const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vP
                                 <div class="op60 text-sm text-center fw300 mx-0">170347806</div>
                             </div>
                             <div class="w-60% py-10px px-20px">
-                                <div class="text-center text-[#6d7885] mb-5px truncate">Математика ЕГЭ | PARTA</div>
+                                <div class="text-[#6d7885] mb-5px truncate">Математика ЕГЭ | PARTA</div>
 
-                                <div class="flex items-center justify-start op60 fw300 text-sm">
+                                <div class="flex items-center justify-start op60 text-sm">
                                     <div class="i-carbon-unlocked h-12px w-12px mt-3px" />
                                     <div class="ml-5px">Доступы: n</div>
                                 </div>
 
-                                <div class="flex items-center justify-start op60 fw300 text-sm">
+                                <div class="flex items-center justify-start op60 text-sm">
                                     <div class="i-carbon-email h-12px w-12px mt-3px" />
                                     <div class="ml-5px">Сообщения: n</div>
                                 </div>
 
-                                <div class="flex items-center justify-start op60 fw300 text-sm">
+                                <div class="flex items-center justify-start op60 text-sm">
                                     <div class="i-carbon-collaborate h-12px w-12px mt-3px" />
                                     <div class="ml-5px">Клиенты: n</div>
                                 </div>
 
-                                <div class="flex items-center justify-start op60 fw300 text-sm">
+                                <div class="flex items-center justify-start op60 text-sm">
                                     <div class="i-carbon-shopping-cart h-12px w-12px mt-3px" />
                                     <div class="ml-5px">Заказы: n</div>
                                 </div>
 
-                                <div class="flex items-center justify-start op60 text-sm">
+                                <div class="flex items-center justify-start op60 fw500 text-sm">
                                     <div class="i-carbon-operations-record h-12px w-12px mt-3px" />
                                     <div class="ml-5px">Управление</div>
                                 </div>
