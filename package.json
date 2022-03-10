@@ -10,7 +10,7 @@
     "@iconify-json/logos": "^1.1.2",
     "@iconify-json/simple-icons": "^1.1.1",
     "@pinia/nuxt": "^0.1.8",
-    "@unocss/nuxt": "^0.26.3",
+    "@unocss/nuxt": "^0.27.4",
     "@vueuse/nuxt": "^7.6.2",
     "nuxt3": "latest"
   },
