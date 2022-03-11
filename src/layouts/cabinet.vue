@@ -24,31 +24,32 @@ const toggleDrawer = () => (drawerCollapsed.value = !drawerCollapsed.value);
 
         <div class="flex h-full items-center">
           <div class="block sm:hidden i-carbon-user-profile" />
+          <div class="hidden sm:block text-[#6d7885] mr-20px truncate">#7a37913b-76bb-4dbe-ae60-14a50d241f57</div>
           <QDropdown class="hidden sm:block">
-            <QButton tertiary class="flex items-center">
-              <span class="ml-5px">Вадим Лукин #1337</span>
+            <QButton tertiary class="flex items-center mx-5px">
+              <span class="mr-10px">Вадим Лукин</span>
               <div class="text-base i-carbon-caret-down" />
             </QButton>
 
             <template #content>
               <NuxtLink to="#" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
-                <div class="h-12px w-12px mt-1px mr-10px i-carbon-user-profile" />
+                <div class="h-12px w-12px mt-1px mr-8px i-carbon-user-profile" />
                 <span>Мой профиль</span>
               </NuxtLink>
               <NuxtLink to="#" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
-                <div class="h-12px w-12px mt-1px mr-10px i-carbon-currency-ruble" />
+                <div class="h-12px w-12px mt-1px mr-8px i-carbon-currency-ruble" />
                 <span>Баланс</span>
               </NuxtLink>
               <NuxtLink to="#" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
-                <div class="h-12px w-12px mt-1px mr-10px i-carbon-document-unknown" />
+                <div class="h-12px w-12px mt-1px mr-8px i-carbon-document-unknown" />
                 <span>Документация</span>
               </NuxtLink>
               <NuxtLink to="#" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
-                <div class="h-12px w-12px mt-1px mr-10px i-carbon-ai-status-in-progress" />
+                <div class="h-12px w-12px mt-1px mr-8px i-carbon-ai-status-in-progress" />
                 <span>Поддержка</span>
               </NuxtLink>
               <NuxtLink to="#" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
-                <div class="h-12px w-12px mt-1px mr-10px i-carbon-login" />
+                <div class="h-12px w-12px mt-1px mr-8px i-carbon-login" />
                 <span>Выйти</span>
               </NuxtLink>
             </template>
