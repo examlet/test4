@@ -28,7 +28,7 @@ const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vP
                 </div>
             </div>
 
-            <div class="h-full align-middle text-center md:text-left py-3px text-[#6d7885]">
+            <div class="h-full align-middle ml-10px text-left py-3px text-[#6d7885]">
                 {{ count ? `${tabList[activeTab]} сообщества: ${count}` : `${tabList[activeTab]} сообщества не найдены` }}
             </div>
             

@@ -23,7 +23,6 @@ const breadcrumbs = computed<{ url: string; title: string }[]>(() => {
     });
 
     const titles = props.titles;
-
     const breadcrumbs = urlsFormatted.map(function (url: string, i: number) {
         return { url: url, title: titles[i] };
     });
@@ -33,7 +32,7 @@ const breadcrumbs = computed<{ url: string; title: string }[]>(() => {
 </script>
 
 <template>
-    <ul flex flex-wrap text-base w0> 
+    <ul class="flex flex-wrap text-base w0"> 
         <li v-for="(item, index) in breadcrumbs" :key="`item${index}`">
             <NuxtLink
                 v-if="index < breadcrumbs.length - 1"

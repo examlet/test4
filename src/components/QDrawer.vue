@@ -7,15 +7,7 @@ const props = defineProps({
 
 <template>
     <div
-        bg-white-500
-        shadow-md
-        float-left
-        right-0
-        fixed
-        z-2
-        h-full
-        flex
-        flex-col
+        class="flex-col flex h-full z-2 fixed right-0 float-left shadow-md bg-[#fff]"
         :style="{ width: `${props.collapsed ? 0 : 290}px` }"
         style="transition: 0.3s;"
     >
