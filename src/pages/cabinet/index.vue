@@ -12,6 +12,7 @@ const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vP
         <template #breadcrumb>
             <QBreadcrumb :titles="['Кабинет']" class="text-black tracking-tighter text-sm" />
         </template>
+        
         <div class="cabinet__content p-20px h-full grid grid-rows-[auto_auto_1fr] gap-5px">
             <div class="bg-[#fff] border-1px border-[#e1e3e6] rounded p2">
                 <div
