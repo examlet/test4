@@ -24,7 +24,7 @@ const toggleDrawer = () => (drawerCollapsed.value = !drawerCollapsed.value);
 
         <div class="flex h-full items-center">
           <div class="block sm:hidden i-carbon-user-profile" />
-          <div class="hidden sm:block text-[#6d7885] mr-20px truncate">#7a37913b-76bb-4dbe-ae60-14a50d241f57</div>
+          <div class="hidden sm:block text-[#6d7885] mr-20px truncate text-sm">#7a37913b-76bb-4dbe-ae60-14a50d241f57</div>
           <QDropdown class="hidden sm:block">
             <QButton tertiary class="flex items-center mx-5px">
               <span class="mr-10px">Вадим Лукин</span>
@@ -55,6 +55,8 @@ const toggleDrawer = () => (drawerCollapsed.value = !drawerCollapsed.value);
             </template>
           </QDropdown>
 
+          <hr class="h-50% w-1px border-l border-[#e1e3e6] mx-5" />
+          <div class="i-carbon-notification-new"></div>
           <hr class="h-50% w-1px border-l border-[#e1e3e6] mx-5" />
           <div
             class="i-carbon-settings cursor-pointer transition-transform duration-300 ease-in-out hover:text-teal-700"

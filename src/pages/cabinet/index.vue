@@ -34,7 +34,7 @@ const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vP
             
             <div class="relative h-full bg-[#fff] border-1px border-[#e1e3e6] rounded p-10px">
                 <div class="absolute left-10px right-10px top-10px bottom-10px overflow-y-auto pr-10px">
-                    <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr_1fr] grid-rows-[1fr_1fr_1fr] gap-10px">
+                    <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr_1fr_1fr] grid-rows-[1fr_1fr_1fr] gap-10px">
                         <div
                             v-for="(tab, index) in test"
                             :key="index"
