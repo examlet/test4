@@ -18,7 +18,7 @@ const toggleDrawer = () => (drawerCollapsed.value = !drawerCollapsed.value);
             <span>QuickSales</span>
           </div>
           
-          <div class="hidden sm:flex">
+          <div class="hidden sm:flex h-full items-center">
             <hr class="h-50% w-1px border-l border-[#e1e3e6] mx-5" />
             <slot name="breadcrumb"/>
           </div>
