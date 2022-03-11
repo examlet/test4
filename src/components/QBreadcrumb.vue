@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import { PropType } from 'nuxt3/dist/app/compat/capi';
 
+const router = useRoute();
+
 const props = defineProps({
-    url: { type: String, required: true },
+    url: { type: String, required: false },
     titles: { type: Array as PropType<string[]>, required: true }
 })
 
 const breadcrumbs = computed<{ url: string; title: string }[]>(() => {
-    const urls = props.url.split("/");
+    const urls = props.url ? props.url.split("/") : router.path.split("/");
     urls.shift()
 
     const urlsFormatted = urls.map((url: string, i: number) => {
@@ -32,7 +34,7 @@ const breadcrumbs = computed<{ url: string; title: string }[]>(() => {
 </script>
 
 <template>
-    <ul class="flex flex-wrap text-base w0"> 
+    <ul class="flex text-base w0"> 
         <li v-for="(item, index) in breadcrumbs" :key="`item${index}`">
             <NuxtLink
                 v-if="index < breadcrumbs.length - 1"

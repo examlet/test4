@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import QDropdown from "../components/QDropdown.vue";
-const router = useRoute();
 const drawerCollapsed = ref(true);
 const toggleDrawer = () => (drawerCollapsed.value = !drawerCollapsed.value);
 </script>
@@ -18,27 +17,32 @@ const toggleDrawer = () => (drawerCollapsed.value = !drawerCollapsed.value);
           <div class="ml-5px text-base font-bold">
             <span>QuickSales</span>
           </div>
-          <hr class="h-50% w-1px border-l border-[#e1e3e6] mx-5" />
-          <QBreadcrumb :url="router.path" :titles="['Кабинет']" class="text-black" />
+          
+          <div class="hidden sm:flex">
+            <hr class="h-50% w-1px border-l border-[#e1e3e6] mx-5" />
+            <slot name="breadcrumb"/>
+          </div>
+          
         </div>
 
         <div class="flex h-full items-center">
-          <div class="block sm:hidden i-carbon-user-profile" />
-          <div class="hidden md:block text-[#6d7885] mr-20px truncate text-sm tracking-tighter fw200 select-text">
+          <NuxtLink to="/cabinet/profile" class="block sm:hidden i-carbon-user-profile cursor-pointer hover:text-teal-700" />
+
+          <div class="hidden md:block text-[#6d7885] mr-20px truncate text-xs tracking-tighter fw200 select-text !selection:bg-teal-700 !selection:bg-opacity-20">
             #7a37913b-76bb-4dbe-ae60-14a50d241f57
           </div>
           <QDropdown class="hidden sm:block">
             <QButton tertiary class="flex items-center mx-5px">
-              <span class="mr-10px">Вадим Лукин</span>
+              <span class="mr-5px">Вадим Лукин</span>
               <div class="text-base i-carbon-caret-down" />
             </QButton>
 
             <template #content>
-              <NuxtLink to="#" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
+              <NuxtLink to="/cabinet/profile" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
                 <div class="h-12px w-12px mt-1px mr-8px i-carbon-user-profile" />
                 <span>Мой профиль</span>
               </NuxtLink>
-              <NuxtLink to="#" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
+              <NuxtLink to="/cabinet/balance" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
                 <div class="h-12px w-12px mt-1px mr-8px i-carbon-currency-ruble" />
                 <span>Баланс</span>
               </NuxtLink>
@@ -50,6 +54,7 @@ const toggleDrawer = () => (drawerCollapsed.value = !drawerCollapsed.value);
                 <div class="h-12px w-12px mt-1px mr-8px i-carbon-ai-status-in-progress" />
                 <span>Поддержка</span>
               </NuxtLink>
+              <hr class="op20 mx-20px my-2" />
               <NuxtLink to="#" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
                 <div class="h-12px w-12px mt-1px mr-8px i-carbon-login" />
                 <span>Выйти</span>
