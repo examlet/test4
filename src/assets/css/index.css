@@ -18,3 +18,11 @@ div#__nuxt {
     background-color: #14b8a6;
     border-radius: 5px;
 }
+
+::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+::-webkit-progress-value {
+    background-color: #14b8a6;
+}

@@ -36,5 +36,3 @@ definePageMeta({
     <NuxtLink to="" class="font-sans text-base text-left text-teal-600 no-underline hover:underline decoration-teal-600 underline-offset-3" flex mb-6>Забыли пароль?</NuxtLink>
   </NuxtLayout>
 </template>
-
-<style scoped></style>

@@ -13,6 +13,3 @@ const props = defineProps({
         class="bg-white text-left border-1 border-teal-500 rounded-sm outline-none active:outline-none px-4 py-2"
     />
 </template>
-
-<style scoped>
-</style>

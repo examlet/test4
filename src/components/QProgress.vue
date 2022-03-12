@@ -2,7 +2,7 @@
 const progress = ref(0);
 const router = useRoute()
 
-watch(router, (selection, prevSelection) => {
+watch(router, () => {
   const { pause, resume, isActive } = useIntervalFn(() => {
     progress.value += 0.01
 
@@ -26,25 +26,5 @@ onMounted(() => {
 </script>
 
 <template>
-  <progress :value="progress"></progress>
+  <progress :value="progress" class="fixed top-0 left-0 w-full h-2px z-9999999"/>
 </template>
-
-<style scoped>
-progress {
-  appearance: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  z-index: 9999999;
-}
-
-::-webkit-progress-bar {
-  background-color: transparent;
-}
-
-::-webkit-progress-value {
-  background-color: #14b8a6;
-}
-</style>

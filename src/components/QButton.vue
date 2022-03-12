@@ -30,6 +30,3 @@ const emit = defineEmits(["click"]);
     <slot />
   </button>
 </template>
-
-<style scoped>
-</style>

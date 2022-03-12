@@ -40,17 +40,17 @@ const toggleDrawer = () => (drawerCollapsed.value = !drawerCollapsed.value);
             <template #content>
               <NuxtLink to="/cabinet/profile" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
                 <div class="h-12px w-12px mt-1px mr-8px i-carbon-user-profile" />
-                <span>Мой профиль</span>
+                <span>Профиль</span>
               </NuxtLink>
               <NuxtLink to="/cabinet/balance" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
                 <div class="h-12px w-12px mt-1px mr-8px i-carbon-currency-ruble" />
                 <span>Баланс</span>
               </NuxtLink>
-              <NuxtLink to="#" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
+              <NuxtLink to="/cabinet/help" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
                 <div class="h-12px w-12px mt-1px mr-8px i-carbon-document-unknown" />
-                <span>Документация</span>
+                <span>Помощь</span>
               </NuxtLink>
-              <NuxtLink to="#" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
+              <NuxtLink to="/cabinet/support" class="flex items-center hover:bg-[#f5f7f9] mb-5px px-10px rounded-sm py-2px">
                 <div class="h-12px w-12px mt-1px mr-8px i-carbon-ai-status-in-progress" />
                 <span>Поддержка</span>
               </NuxtLink>
