@@ -50,6 +50,7 @@ export default defineNuxtConfig({
             ['landing__header_submenu', 'absolute block lg:hidden bg-[#fff] rounded-2xl top-64px shadow-lg w-full transition duration-300 -z-1'],
             ['landing__header_submenuСontainer', 'flex flex-col py-30px'],
             ['landing__header_submenuLine', 'h-28px mt-20px'],
+            ['landing__header_submenuLink', 'flex items-center justify-start'],
 
             ['auth', 'h-full'],
             ['auth__logo', 'hidden lg:flex absolute top-40px left-40px items-start z-1 text-teal-600'],
