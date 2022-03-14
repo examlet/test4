@@ -100,25 +100,25 @@ onClickOutside(target, () => submenuCollapsed.value = true)
       >
         <div class="flex flex-col py-15px my-0 mx-auto py-0 box-border relative w-full px-25px text-sm">
           <div class="h-20px mt-0">
-            <NuxtLink to="#" class="landing__header_submenuLink">
+            <NuxtLink to="/cabinet/profile" class="landing__header_submenuLink">
               <div class="i-carbon-user-profile" />
               <div class="ml-10px">Профиль</div>
             </NuxtLink>
           </div>
           <div class="h-20px mt-10px">
-            <NuxtLink to="#" class="landing__header_submenuLink">
+            <NuxtLink to="/cabinet/balance" class="landing__header_submenuLink">
               <div class="i-carbon-currency-ruble" />
               <div class="ml-10px">Баланс</div>
             </NuxtLink>
           </div>
           <div class="h-20px mt-10px">
-            <NuxtLink to="" class="landing__header_submenuLink">
+            <NuxtLink to="/cabinet/help" class="landing__header_submenuLink">
               <div class="i-carbon-document-unknown" />
               <div class="ml-10px">Помощь</div>
             </NuxtLink>
           </div>
           <div class="h-20px mt-10px">
-            <NuxtLink to="#" class="landing__header_submenuLink">
+            <NuxtLink to="/cabinet/support" class="landing__header_submenuLink">
               <div class="i-carbon-ai-status-in-progress" />
               <div class="ml-10px">Поддержка</div>
             </NuxtLink>
