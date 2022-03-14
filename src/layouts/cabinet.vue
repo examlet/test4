@@ -3,6 +3,8 @@ const drawerCollapsed = ref(true);
 const toggleDrawer = () => (drawerCollapsed.value = !drawerCollapsed.value);
 const submenuCollapsed = ref(true)
 const toggleSubmenu = () => submenuCollapsed.value = !submenuCollapsed.value
+const target = ref(null)
+onClickOutside(target, () => submenuCollapsed.value = true)
 </script>
 
 <template>
@@ -92,6 +94,7 @@ const toggleSubmenu = () => submenuCollapsed.value = !submenuCollapsed.value
     </div>
 
     <div
+        ref="target"
         class="absolute block lg:hidden bg-[#fff] rounded-2xl top-48px shadow-lg w-full transition duration-300 z-1"
         :class="[submenuCollapsed ? '-translate-y-120%' : '-translate-y-0']"
       >

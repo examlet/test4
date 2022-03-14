@@ -43,7 +43,7 @@ export default defineNuxtConfig({
             ['landing__header_container', 'flex flex-row justify-between items-center h-full'],
             ['landing__header_logo', 'flex h-30px'],
             ['landing__header_menu', 'flex flex-row items-center !hidden !lg:block'],
-            ['landing__header_button', '!text-[#6d7885] !hover:text-[#000] mr-32px'],
+            ['landing__header_button', '!text-[#6d7885] !hover:text-[#000] mr-32px h-30px'],
             ['landing__header_burger', 'flex lg:hidden items-center'],
             ['landing__header_burgerBox', 'relative inline-block w-20px h-24px'],
             ['landing__header_burgerBoxInner', 'block w-20px h-2px bg-[#333] rounded-4px'],
