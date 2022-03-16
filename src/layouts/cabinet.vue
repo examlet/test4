@@ -105,7 +105,7 @@ const toggleSettings = () => {
 
           <div
             @click="toggleSettings"
-            :class="{ 'rotate-360': !drawerCollapsed }"
+            :class="{ 'rotate-180': !drawerCollapsed }"
             class="i-carbon-settings cursor-pointer hover:text-teal-700 transition-transform duration-300 ease-in-out"
           />
         </div>
