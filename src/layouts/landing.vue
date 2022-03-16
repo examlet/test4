@@ -74,7 +74,7 @@ const changeSubmenu = () => submenu_hidden.value = !submenu_hidden.value
                 </div>
             </div>
         </div>
-        <div class="landing__wrapper mt-20px landing_content">
+        <div class="landing__wrapper landing_content mt-20px">
             <slot />
         </div>
     </div>
