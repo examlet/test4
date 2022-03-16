@@ -6,6 +6,6 @@ definePageMeta({
 
 <template>
     <NuxtLayout name="landing">
-        Главная
+        Блог
     </NuxtLayout>
 </template>
