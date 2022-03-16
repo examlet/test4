@@ -1,15 +1,21 @@
 <script lang="ts" setup>
 const props = defineProps({
-    tabList: { type: Array, required: true }
+    tabList: { type: Array, required: true },
+    currentTab: { type: Number, required: false },
 })
 
-const activeTab = ref(1)
+const activeTab = props.currentTab ? ref(props.currentTab) : ref(0)
 
 const emit = defineEmits(["update:modelValue"]);
 
 watch(activeTab, () => {
-   emit("update:modelValue", activeTab.value - 1);
+   emit("update:modelValue", activeTab.value);
 });
+
+watch(() => props.currentTab, () => {
+  activeTab.value = props.currentTab
+});
+
 </script>
 
 <template>
@@ -19,8 +25,8 @@ watch(activeTab, () => {
         v-for="(tab, index) in props.tabList"
         :key="index"
         class="w-full py-1 px-5px rounded-sm mx-5px cursor-pointer transition-colors duration-300"
-        :class="[index + 1 == activeTab ? 'text-white font-medium bg-teal-500' : 'text-black bg-[#f5f7f9] hover:bg-[#dddfe1]']"
-        @click="activeTab = index + 1"
+        :class="[index == activeTab ? 'text-white font-medium bg-teal-500' : 'text-black bg-[#f5f7f9] hover:bg-[#dddfe1]']"
+        @click="activeTab = index"
       > {{tab}} </li>
     </ul>
   </div>

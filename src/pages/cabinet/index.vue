@@ -24,7 +24,7 @@ const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vP
                             <span class="text-base">Подключить сообщество</span>
                         </div>
                     </QButton>
-                    <QTabs v-model="activeTab" :tabList="tabList" class="h-40px w-full" />
+                    <QTabs v-model="activeTab" :tabList="tabList" :currentTab="activeTab" class="h-40px w-full" />
                     <QInput
                         placeholder="Найти сообщество"
                         class="h-40px w-full md:col-span-full lg:col-span-1"

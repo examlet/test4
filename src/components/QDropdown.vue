@@ -12,7 +12,7 @@ onClickOutside(target, () => collapsed.value = true)
         <transition name="dropdown-content">
             <div
                 v-if="!collapsed"
-                class="absolute -ml-40px sm:-ml-5% mt-5px w-110% bg-[#fff] rounded-sm shadow-xl border-1px border-[#e1e3e6] p-10px ml-10px items-center px-auto"
+                class="absolute -ml-60px sm:-ml-5% mt-15px sm:mt-5px w-140px sm:w-110% bg-[#fff] rounded-sm shadow-xl border-1px border-[#e1e3e6] p-10px items-center px-auto"
             >
                 <slot name="content" />
             </div>
