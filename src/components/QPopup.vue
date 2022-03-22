@@ -41,7 +41,7 @@
 
 <style scoped>
   .ui-popup-block {
-    background-color: #000a;
+    background-color: rgba(0, 0, 0, 0.281);
     position: fixed;
     inset: 0;
     display: flex;
@@ -51,18 +51,18 @@
 
   .ui-popup {
     position: relative;
-    background-color: var(--color-white);
+    background-color: #fff;
     padding: 32px 64px;
     max-width: 60%;
     border-radius: 8px;
-    box-shadow: 0px 0px 8px -2px var(--color-black);
+    box-shadow: 0px 0px 8px -2px #000;
     outline: none;
   }
 
   .ui-popup-close {
     position: absolute;
     border: none;
-    background-color: var(--color-gray-light);
+    background-color: gray;
     top: 16px;
     right: 16px;
     width: 32px;

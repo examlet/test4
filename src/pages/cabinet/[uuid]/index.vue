@@ -4,7 +4,7 @@
 <template>
     <NuxtLayout name="uuid">
         <template #breadcrumb>
-            <QBreadcrumb :titles="['Кабинет', 'Математика']" class="text-black tracking-tighter text-sm" />
+            <QBreadcrumb :titles="['Кабинет', 'Сообщество']" class="text-black tracking-tighter text-sm" />
         </template>
         
         123

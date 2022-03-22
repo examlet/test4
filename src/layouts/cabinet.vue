@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const tabList = ["Уведомления", "Настройки"]
 const activeTab = ref(1)
 const drawerCollapsed = ref(true);
 
@@ -107,7 +106,7 @@ const toggleSettings = () => {
           <div
             @click="toggleSettings"
             :class="{ 'rotate-180': !drawerCollapsed }"
-            class="i-carbon-settings cabinet__header_icon"
+            class="i-carbon-settings duration-300 cabinet__header_icon"
           />
         </div>
       </div>
@@ -122,7 +121,7 @@ const toggleSettings = () => {
 
       <QDrawer :collapsed="drawerCollapsed">
         <div class="p-20px">
-          <QTabs v-model="activeTab" :currentTab="activeTab" :tabList="tabList" class="h-40px w-full" />
+          <QTabs v-model="activeTab" :currentTab="activeTab" :tabList="['Уведомления', 'Настройки']" class="h-40px w-full" />
 
           <div class="mt-20px">
             <div v-if="activeTab == 0">
