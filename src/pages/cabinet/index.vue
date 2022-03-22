@@ -1,10 +1,14 @@
 <script lang="ts" setup>
+import QPopup from '~~/src/components/QPopup.vue';
 const tabList = ["Мои", "Доступные", "Избранные"]
 const activeTab = ref(0)
 
 const test = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "13", "14", "15"]
 const count = 11
 const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vPNmwUYX3e9b7QUn4YBurMUCmXTY7oyFNEdU2OaDmS8oKd0Nt2FyN8qnS3F0FVExSG.jpg?size=200x200&quality=95&crop=0,0,900,900&ava=1"
+
+const popup = ref(false)
+const togglePopup = () => (popup.value = !popup.value)
 </script>
 
 <template>
@@ -12,13 +16,15 @@ const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vP
         <template #breadcrumb>
             <QBreadcrumb :titles="['Кабинет']" class="text-black tracking-tighter text-sm" />
         </template>
+
+        <QPopup v-model="popup" class="z-99999">кек</QPopup>
         
         <div class="cabinet__content p-20px h-full grid grid-rows-[auto_auto_1fr] gap-5px">
             <div class="bg-[#fff] border-1px border-[#e1e3e6] rounded p2">
                 <div
                     class="cabinet__content_control grid grid-cols-1 grid-rows-3 md:grid-rows-2 md:grid-cols-[3fr_4fr] lg:grid-rows-1 lg:grid-cols-[5fr_6fr_7fr] gap-15px lg:gap-30px"
                 >
-                    <QButton strong class="h-40px w-full">
+                    <QButton strong class="h-40px w-full" @click="togglePopup">
                         <div class="flex items-center justify-center text-sm">
                             <div class="i-carbon-rotate-clockwise-filled mr-10px" />
                             <span class="text-base">Подключить сообщество</span>
@@ -39,7 +45,7 @@ const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vP
             <div class="relative h-full bg-[#fff] border-1px border-[#e1e3e6] rounded p-10px">
                 <div class="absolute left-10px right-10px top-10px bottom-10px overflow-y-auto pr-10px">
                     <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr_1fr] xl:grid-cols-[1fr_1fr_1fr_1fr] grid-rows-[1fr_1fr_1fr] gap-10px">
-                        <div
+                        <NuxtLink to="/cabinet/123"
                             v-for="(tab, index) in test"
                             :key="index"
                             class="flex w-full h-150px border-1px border-[#e1e3e6] hover:border-[#14b8a6] rounded overflow-hidden transition-colors duration-300"
@@ -84,7 +90,7 @@ const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vP
                                     <div class="ml-5px">Управление</div>
                                 </div>
                             </div>
-                        </div>
+                        </NuxtLink>
                     </div>
                 </div>
             </div>
