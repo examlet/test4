@@ -4,6 +4,9 @@
 <template>
   <NuxtLayout name="cabinet">
     <Sidebar />
-    <slot />
+    <template #breadcrumb>
+      <slot name="breadcrumb" />
+    </template>
+    <slot/>
   </NuxtLayout>
 </template>
