@@ -10,7 +10,7 @@
         </template>
 
         <div
-            class="cabinet__content p-20px h-full grid grid-rows-[1fr_2fr] grid-cols-[1fr_auto] gap-20px"
+            class="cabinet__content p-20px h-full grid grid-rows-[1fr_3fr] grid-cols-[1fr_auto] gap-20px"
         >
             <div class="bg-[#fff] border-1px border-[#e1e3e6] rounded p2 row-span-2 col-start-2">
                 <div class="grid gap-10px">
@@ -35,7 +35,7 @@
                         placeholder="a1kk3@gmail.com"
                         class="h-30px w-full md:col-span-full lg:col-span-1"
                     />
-                    <QButton class="h-40px mt-10px">Сохранить</QButton>
+                    <QButton class="h-40px mt-10px">Обновить</QButton>
                 </div>
             </div>
 
