@@ -15,8 +15,8 @@ const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vP
             class="cabinet__content p-20px h-full grid grid-rows-[1fr_3fr] grid-cols-[1fr_auto] gap-20px"
         >
             <div class="bg-[#fff] border-1px border-[#e1e3e6] rounded p2 row-span-2 col-start-2">
-                <div class="grid gap-10px p-10px">
-                    <div class="h-72px w-72px mx-auto">
+                <div class="grid gap-5px p-10px">
+                    <div class="h-78px w-78px mx-auto">
                         <img class="rounded-50px" :src="photo_url" />
                     </div>
                     <div class="text-sm">Имя</div>
