@@ -9,7 +9,7 @@ const changeSubmenu = () => submenu_hidden.value = !submenu_hidden.value
             <div class="landing__header_line">
                 <div class="landing__header_container landing__wrapper">
                     <div class="header__logo">
-                        <NuxtLink to="/" class="flex items-start text-teal-600 ">
+                        <NuxtLink to="/" class="flex items-start text-teal-600">
                             <div class="h-24px w-24px text-2xl">
                                 <div class="i-carbon-webhook" />
                             </div>
@@ -28,7 +28,7 @@ const changeSubmenu = () => submenu_hidden.value = !submenu_hidden.value
                         <NuxtLink to="/blog">
                             <QButton class="landing__header_button" quaternary>Блог</QButton>
                         </NuxtLink>
-                        <NuxtLink to="/auth">
+                        <NuxtLink to="/cabinet">
                             <QButton class="h-30px" tertiary>Перейти в приложение</QButton>
                         </NuxtLink>
                     </div>

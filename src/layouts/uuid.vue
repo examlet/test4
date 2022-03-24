@@ -7,6 +7,6 @@
     <template #breadcrumb>
       <slot name="breadcrumb" />
     </template>
-    <slot/>
+    <slot />
   </NuxtLayout>
 </template>

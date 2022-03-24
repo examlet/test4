@@ -5,7 +5,5 @@ definePageMeta({
 </script>
 
 <template>
-    <NuxtLayout name="landing">
-        Тарифы
-    </NuxtLayout>
+    <NuxtLayout name="landing">Тарифы</NuxtLayout>
 </template>

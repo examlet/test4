@@ -1,13 +1,14 @@
 <script setup lang="ts">
-const store = useStore()
+const collapsed = useState('sidebarCollapsed', () => false)
 </script>
 
 <template>
   <div
     class="bg-white-500 shadow-md float-left fixed z-2 h-full p-2 flex flex-col"
-    :class="[store.collapsed ? 'w-3.3rem' : 'w-12.5rem']"
+    :class="[collapsed ? 'w-3.3rem' : 'w-12.5rem']"
     style="transition: 0.3s ease;"
-    @mouseenter="store.collapsed = false" @mouseleave="store.collapsed = true"
+    @mouseenter="collapsed = false"
+    @mouseleave="collapsed = true"
   >
     <hr op20 mx-3 my-2 />
     <SidebarLink to="/cabinet/123" icon="i-carbon-home" title="Математика" />

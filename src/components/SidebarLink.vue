@@ -13,17 +13,11 @@ const isActive = computed(() => route.path === props.to)
   <NuxtLink
     :to="to"
     :class="[isActive ? 'text-teal-700 bg-gray-100 rounded' : 'text-gray-700']"
-    flex
-    items-center
-    relative
-    py-4
-    pl-2
-    hover:text-teal-700
-    h-37px
+    class="flex items-center relative py-4 pl-2 hover:text-teal-700 h-37px"
   >
-    <i :class="icon" flex-shrink-0 mr-3 />
+    <i :class="icon" class="flex-shrink-0 mr-3" />
     <transition name="fade">
-      <span text-sm truncate pb-2px>{{ title }}</span>
+      <span class="text-sm truncate pb-2px">{{ title }}</span>
     </transition>
   </NuxtLink>
 </template>

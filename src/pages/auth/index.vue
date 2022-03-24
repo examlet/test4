@@ -9,7 +9,7 @@ definePageMeta({
     <div class="auth__content_title">Войдите или зарегистрируйтесь</div>
     <div class="auth__content_socialTitle">Через социальные сети</div>
     <div class="auth__content_socialBtnGroup">
-      <QButton class="auth__content_socialBtn " bordered disabled>
+      <QButton class="auth__content_socialBtn" bordered disabled>
         <div class="auth__content_socialIcon bg-blue-500 i-simple-icons-vk" />
       </QButton>
       <QButton class="auth__content_socialBtn" bordered disabled>
