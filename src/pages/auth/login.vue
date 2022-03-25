@@ -19,7 +19,7 @@ const auth = async () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ 'login': login.value, 'password': password.value }),
-      mode: "cors"
+      mode: "no-cors"
     }
   )
     .then(response => response.json())
