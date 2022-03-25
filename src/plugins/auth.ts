@@ -1,13 +1,5 @@
 export default defineNuxtPlugin(() => {
     addRouteMiddleware('auth', (to, from) => {
-        function isTokenExpired(token) {
-            const buf = Buffer.from(token.split('.')[1], "utf8");
-            const base64Encode = buf.toString("base64");
-            console.log(base64Encode);
-            const expiry = (JSON.parse(base64Encode)).exp;
-            return (Math.floor((new Date).getTime() / 1000)) >= expiry;
-        }
-
         const store = useStore()
 
         const access_token = store.accessToken
@@ -15,11 +7,8 @@ export default defineNuxtPlugin(() => {
         const refresh_token = store.refreshToken
         console.log(`refresh: ${refresh_token}`)
 
-        if (access_token) { console.log(`exp access: ${isTokenExpired(access_token)}`) }
-        if (refresh_token) { console.log(`exp refresh: ${isTokenExpired(refresh_token)}`) }
-
         let redirect = false
-        if (!access_token || isTokenExpired(access_token)) {
+        if (!access_token) {
             if (refresh_token) {
                 fetch("http://127.0.0.1:8000/api/v1/users/refresh", {
                     mode: "cors",
