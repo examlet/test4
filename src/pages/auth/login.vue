@@ -13,13 +13,13 @@ const auth = async () => {
   await fetch(
     "https://b562yw.deta.dev/api/v1/users/login",
     {
+      mode: "cors",
       method: "POST",
       headers: {
         "accept": "application/json",
-        "Content-type": "application/json"
+        "content-type": "application/json"
       },
-      body: JSON.stringify({ 'login': login.value, 'password': password.value }),
-      mode: "no-cors"
+      body: JSON.stringify({ 'login': login.value, 'password': password.value })
     }
   )
     .then(response => response.json())
