@@ -1,7 +1,7 @@
 export default defineNuxtPlugin(() => {
     addRouteMiddleware('auth', (to, from) => {
         function isTokenExpired(token) {
-            const expiry = (JSON.parse(atob(token.split('.')[1]))).exp;
+            const expiry = (JSON.parse(token.split('.')[1])).exp;
             return (Math.floor((new Date).getTime() / 1000)) >= expiry;
         }
 
