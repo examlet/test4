@@ -12,8 +12,8 @@ export default defineNuxtPlugin(() => {
         const refresh_token = store.refreshToken
         console.log(`refresh: ${refresh_token}`)
 
-        if (access_token) { console.log(`expired access: ${isTokenExpired(access_token)}`) }
-        if (refresh_token) { console.log(`expired refresh: ${isTokenExpired(refresh_token)}`) }
+        if (access_token) { console.log(`exp access: ${isTokenExpired(access_token)}`) }
+        if (refresh_token) { console.log(`exp refresh: ${isTokenExpired(refresh_token)}`) }
 
         let redirect = false
         if (!access_token || isTokenExpired(access_token)) {
