@@ -16,7 +16,7 @@ const auth = async () => {
       method: "POST",
       headers: {
         "accept": "application/json",
-        "Content-Type": "application/json",
+        "Content-type": "application/json"
       },
       body: JSON.stringify({ 'login': login.value, 'password': password.value }),
       mode: "no-cors"

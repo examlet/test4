@@ -19,7 +19,7 @@ export default defineNuxtPlugin(() => {
                     method: "POST",
                     headers: {
                         "accept": "application/json",
-                        "Content-Type": "application/json",
+                        "Content-type": "application/json"
                     },
                     body: JSON.stringify(refresh_token)
                 }).then(response => response.json()).then(data => {
