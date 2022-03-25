@@ -15,7 +15,8 @@ export default defineNuxtPlugin(() => {
         let redirect = false
         if (!access_token || isTokenExpired(access_token)) {
             if (refresh_token) {
-                fetch("https://b562yw.deta.dev/api/v1/users/refresh", {
+                fetch("http://127.0.0.1:8000/api/v1/users/login", {
+                    mode: "cors",
                     method: "POST",
                     headers: {
                         "accept": "application/json",

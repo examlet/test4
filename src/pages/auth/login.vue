@@ -11,15 +11,13 @@ const store = useStore()
 const router = useRouter()
 const auth = async () => {
   await fetch(
-    "https://b562yw.deta.dev/api/v1/users/login",
+    "http://127.0.0.1:8000/api/v1/users/login",
     {
       mode: "cors",
       method: "POST",
       headers: {
         "accept": "application/json",
-        "content-type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Credentials": "true"
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({ 'login': login.value, 'password': password.value })
     }
