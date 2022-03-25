@@ -1,11 +1,9 @@
 import { defineNuxtConfig } from 'nuxt3'
 
 export default defineNuxtConfig({
-    ssr: false,
-    // vueuse: {
-    //     ssrHandlers: true,
-    // },
-
+    vueuse: {
+        ssrHandlers: true,
+    },
     srcDir: "src/",
     buildModules: [
         "@vueuse/nuxt",

@@ -11,7 +11,7 @@ const store = useStore()
 const router = useRouter()
 const auth = async () => {
   await fetch(
-    "http://127.0.0.1:8000/api/v1/users/login",
+    "https://b562yw.deta.dev/api/v1/users/login",
     {
       method: "POST",
       headers: {
@@ -24,10 +24,8 @@ const auth = async () => {
     .then(response => response.json())
     .then(data => {
       console.log(data)
-      localStorage.setItem('refresh_token', data.refresh_token)
-      store.authUser.uuid = data.uuid
-      store.authUser.username = data.username
-      store.authUser.accessToken = data.access_token
+      store.accessToken = data.access_token
+      store.refreshToken = data.refresh_token
       router.push('/cabinet')
     })
 }

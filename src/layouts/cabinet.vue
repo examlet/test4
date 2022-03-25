@@ -34,13 +34,13 @@ const store = useStore()
         </div>
 
         <div class="cabinet__header_rightGroup">
-          <div class="cabinet__header_userUuid">#{{store.authUser.uuid}}</div>
+          <div class="cabinet__header_userUuid">#</div>
 
           <QDropdown>
             <div class="block sm:hidden i-carbon-user-profile cabinet__header_icon" />
 
             <QButton tertiary class="cabinet__header_userButton">
-              <span class="mr-5px">{{store.authUser.username}}</span>
+              <span class="mr-5px">Имя Фамилия</span>
               <div class="text-base i-carbon-caret-down" />
             </QButton>
 

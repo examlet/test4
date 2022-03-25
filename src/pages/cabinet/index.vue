@@ -1,8 +1,4 @@
 <script lang="ts" setup>
-definePageMeta({
-  middleware: ["auth"]
-})
-
 const tabList = ["Мои", "Доступные", "Избранные"]
 const activeTab = ref(0)
 

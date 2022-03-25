@@ -1,9 +1,4 @@
-<script lang="ts" setup>import { storeToRefs } from 'pinia';
-
-definePageMeta({
-    middleware: ["auth"]
-})
-
+<script lang="ts" setup>
 const store = useStore()
 
 let obj = {
@@ -13,7 +8,7 @@ let obj = {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer ' + store.authUser.accessToken
+            'Authorization': 'Bearer ' + useStore().authUser.accessToken
         }
     }
 }
@@ -21,6 +16,7 @@ let obj = {
 fetch(obj.link, obj.object)
     .then((response) => response.json())
     .then((data) => {
+        console.log(store.authUser.accessToken)
         console.log(data);
         store.authUser.login = data.login
     })

@@ -1,16 +1,12 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
 
 export const useStore = defineStore('store', () => {
-  const authUser = reactive({
-    uuid: '',
-    username: '',
-    login: '',
-    accessToken: null,
-    firstAuth: true,
-  })
+  const accessToken = ref();
+  const refreshToken = useCookie('refreshToken', {maxAge: 60 * 60 * 24})
 
   return {
-    authUser
+    accessToken,
+    refreshToken 
   }
 })
 
