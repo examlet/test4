@@ -3,24 +3,31 @@ definePageMeta({
   layout: false,
 });
 
-const router = useRouter()
-
 const login = useState('login', () => '')
 const password = useState('password', () => '')
 
-const authLogin = async () => {
-  await fetch("http://127.0.0.1:8000/api/v1/users/login", {
-    method: "POST",
-    headers: {
-      "accept": "application/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ 'login': login.value, 'password': password.value })
-  })
+
+const store = useStore()
+const router = useRouter()
+const auth = async () => {
+  await fetch(
+    "http://127.0.0.1:8000/api/v1/users/login",
+    {
+      method: "POST",
+      headers: {
+        "accept": "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ 'login': login.value, 'password': password.value })
+    }
+  )
     .then(response => response.json())
     .then(data => {
+      console.log(data)
       localStorage.setItem('refresh_token', data.refresh_token)
-      useStore().accessToken = data.access_token
+      store.authUser.uuid = data.uuid
+      store.authUser.username = data.username
+      store.authUser.accessToken = data.access_token
       router.push('/cabinet')
     })
 }
@@ -56,7 +63,7 @@ const authLogin = async () => {
       class="bg-transparent text-left border-1 border-gray-500 border-opacity-50 focus:border-teal-600 rounded outline-none active:outline-none px-4 py-2 mt-5 h-12 w-full"
     />
 
-    <QButton strong class="w-full h-12 my-5" @click="authLogin">Далее</QButton>
+    <QButton strong class="w-full h-12 my-5" @click="auth">Далее</QButton>
 
     <NuxtLink
       to="#"

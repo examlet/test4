@@ -1,6 +1,11 @@
 import { defineNuxtConfig } from 'nuxt3'
 
 export default defineNuxtConfig({
+    ssr: false,
+    // vueuse: {
+    //     ssrHandlers: true,
+    // },
+
     srcDir: "src/",
     buildModules: [
         "@vueuse/nuxt",
@@ -9,9 +14,6 @@ export default defineNuxtConfig({
     ],
     typescript: {
         shim: false,
-    },
-    vueuse: {
-        ssrHandlers: true,
     },
     css: ["@/assets/css/index.css"],
     components: {

@@ -1,10 +1,29 @@
 <script lang="ts" setup>import { storeToRefs } from 'pinia';
 
 definePageMeta({
-  middleware: ["auth"]
+    middleware: ["auth"]
 })
 
 const store = useStore()
+
+let obj = {
+    link: 'http://127.0.0.1:8000/api/v1/users/current',
+    object: {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + store.authUser.accessToken
+        }
+    }
+}
+
+fetch(obj.link, obj.object)
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data);
+        store.authUser.login = data.login
+    })
 
 const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vPNmwUYX3e9b7QUn4YBurMUCmXTY7oyFNEdU2OaDmS8oKd0Nt2FyN8qnS3F0FVExSG.jpg?size=200x200&quality=95&crop=0,0,900,900&ava=1"
 </script>
@@ -27,9 +46,9 @@ const photo_url = "https://sun9-18.userapi.com/s/v1/ig2/ZNUHd8FflAqjWD5ZaCgDp1vP
                         <img class="rounded-50px" :src="photo_url" />
                     </div>
                     <div class="text-sm">Отображаемое имя</div>
-                    <QInput :placeholder="store.userTokenPair.username" class="h-30px w-full" />
+                    <QInput :placeholder="store.authUser.username" class="h-30px w-full" />
                     <div class="text-sm">Имя пользователя</div>
-                    <QInput :placeholder="store.userTokenPair.username" class="h-30px w-full" />
+                    <QInput :placeholder="store.authUser.login" class="h-30px w-full" />
                     <div class="text-sm">Введите пароль</div>
                     <QInput placeholder="**********" class="h-30px w-full" />
                     <div class="text-sm">Повторите пароль</div>

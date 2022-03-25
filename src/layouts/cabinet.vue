@@ -13,6 +13,8 @@ const toggleSettings = () => {
   drawerCollapsed.value = activeTab.value == 1 && !drawerCollapsed.value ? true : false;
   activeTab.value = 1;
 };
+
+const store = useStore()
 </script>
 
 <template>
@@ -32,13 +34,13 @@ const toggleSettings = () => {
         </div>
 
         <div class="cabinet__header_rightGroup">
-          <div class="cabinet__header_userUuid">#</div>
+          <div class="cabinet__header_userUuid">#{{store.authUser.uuid}}</div>
 
           <QDropdown>
             <div class="block sm:hidden i-carbon-user-profile cabinet__header_icon" />
 
             <QButton tertiary class="cabinet__header_userButton">
-              <span class="mr-5px">Имя Фамилия</span>
+              <span class="mr-5px">{{store.authUser.username}}</span>
               <div class="text-base i-carbon-caret-down" />
             </QButton>
 

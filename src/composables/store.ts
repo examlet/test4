@@ -1,10 +1,16 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
 
 export const useStore = defineStore('store', () => {
-  const accessToken = ref('')
+  const authUser = reactive({
+    uuid: '',
+    username: '',
+    login: '',
+    accessToken: null,
+    firstAuth: true,
+  })
 
   return {
-    accessToken
+    authUser
   }
 })
 
